@@ -2,7 +2,6 @@
   <div id="app">
     <v-app id="inspire">
       <v-card id="v-card" v-resize="resize">
-        <v-card-title>shrimp</v-card-title>
         <v-data-table
           :height="tableHeight"
           :headers="headers"
@@ -185,7 +184,7 @@ export default {
   },
   methods: {
     resize: function () {
-      this.tableHeight = document.querySelector("#v-card").offsetHeight - 100;
+      this.tableHeight = document.querySelector("#v-card").offsetHeight - 50;
     },
   },
 };
